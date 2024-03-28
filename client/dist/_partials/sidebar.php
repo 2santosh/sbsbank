@@ -31,8 +31,8 @@
   ?>
 
       <a href="pages_dashboard.php" class="brand-link">
-        <img src="./../img/<?php echo $sys->sys_logo;?>" alt="iBanking Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light"><?php echo $sys->sys_name;?></span>
+        <img src="./../img/<?php echo $sys->sys_logo; ?>" alt="iBanking Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light"><?php echo $sys->sys_name; ?></span>
       </a>
 
       <!-- Sidebar -->
@@ -99,114 +99,115 @@
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview">
-                
-                <li class="nav-item">
-                  <a href="pages_withdrawals.php" class="nav-link">
-                    <i class="fas fa-download nav-icon"></i>
-                    <p>Withdrawals</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages_transfers.php" class="nav-link">
-                    <i class="fas fa-random nav-icon"></i>
-                    <p>Transfers</p>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="pages_view_client_bank_acc.php" class="nav-link">
-                    <i class="fas fa-money-bill-alt nav-icon"></i>
-                    <p>Balance Enquiries</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <!-- ./Finances -->
-            <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-dollar-sign"></i>
-                <p>
-                  Loans
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                
-                <li class="nav-item">
-                  <a href="pages_loan_application_form.php" class="nav-link">
-                    <i class="fas fa-download nav-icon"></i>
-                    <p>Apply loan</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages_payment_loan.php" class="nav-link">
-                    <i class="fas fa-random nav-icon"></i>
-                    <p>Payment Loan</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-header">Advanced Modules</li>
+              <!-- Withdrawals -->
             <li class="nav-item">
-              <a href="pages_transactions_engine.php" class="nav-link">
-                <i class="nav-icon fas fa-exchange-alt"></i>
-                <p>
-                  Transactions History
-                </p>
+              <a href="pages_withdrawals.php?client_id=<?php echo $client_id; ?>" class="nav-link">
+                <i class="fas fa-download nav-icon"></i>
+                <p>Withdrawals</p>
               </a>
             </li>
-            <!--./Transcactions Engine-->
 
-            <!--Financial Reporting-->
-            <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-file-invoice-dollar"></i>
-                <p>
-                  Finacial Reports
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="pages_financial_reporting_deposits.php" class="nav-link">
-                    <i class="fas fa-file-upload nav-icon"></i>
-                    <p>Deposits</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages_financial_reporting_withdrawals.php" class="nav-link">
-                    <i class="fas fa-cart-arrow-down nav-icon"></i>
-                    <p>Withdrawals</p>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="pages_financial_reporting_transfers.php" class="nav-link">
-                    <i class="fas fa-random nav-icon"></i>
-                    <p>Transfers</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages_financial_reporting_loan.php" class="nav-link">
-                    <i class="fas fa-random nav-icon"></i>
-                    <p>Loans</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <!-- ./ End financial Reporting-->
-
-            <!-- Log Out -->
+            <!-- Transfers -->
             <li class="nav-item">
-              <a href="pages_logout.php" class="nav-link">
-                <i class="nav-icon fas fa-power-off"></i>
-                <p>
-                  Log Out
-                </p>
+              <a href="pages_transfers.php?client_id=<?php echo $client_id; ?>" class="nav-link">
+                <i class="fas fa-random nav-icon"></i>
+                <p>Transfers</p>
               </a>
             </li>
-            <!-- ./Log Out -->
+
+            <li class="nav-item">
+              <a href="pages_view_client_bank_acc.php" class="nav-link">
+                <i class="fas fa-money-bill-alt nav-icon"></i>
+                <p>Balance Enquiries</p>
+              </a>
+            </li>
+          </ul>
+          </li>
+          <!-- ./Finances -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-dollar-sign"></i>
+              <p>
+                Loans
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a href="pages_loan_application_form.php" class="nav-link">
+                  <i class="fas fa-download nav-icon"></i>
+                  <p>Apply loan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages_payment_loan.php" class="nav-link">
+                  <i class="fas fa-random nav-icon"></i>
+                  <p>Payment Loan</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">Advanced Modules</li>
+          <li class="nav-item">
+            <a href="pages_transactions_engine.php" class="nav-link">
+              <i class="nav-icon fas fa-exchange-alt"></i>
+              <p>
+                Transactions History
+              </p>
+            </a>
+          </li>
+          <!--./Transcactions Engine-->
+
+          <!--Financial Reporting-->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-invoice-dollar"></i>
+              <p>
+                Finacial Reports
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages_financial_reporting_deposits.php" class="nav-link">
+                  <i class="fas fa-file-upload nav-icon"></i>
+                  <p>Deposits</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages_financial_reporting_withdrawals.php" class="nav-link">
+                  <i class="fas fa-cart-arrow-down nav-icon"></i>
+                  <p>Withdrawals</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="pages_financial_reporting_transfers.php" class="nav-link">
+                  <i class="fas fa-random nav-icon"></i>
+                  <p>Transfers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages_financial_reporting_loan.php" class="nav-link">
+                  <i class="fas fa-random nav-icon"></i>
+                  <p>Loans</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- ./ End financial Reporting-->
+
+          <!-- Log Out -->
+          <li class="nav-item">
+            <a href="pages_logout.php" class="nav-link">
+              <i class="nav-icon fas fa-power-off"></i>
+              <p>
+                Log Out
+              </p>
+            </a>
+          </li>
+          <!-- ./Log Out -->
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
